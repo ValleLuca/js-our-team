@@ -30,6 +30,7 @@ const team = [
     image: 'img/barbara-ramos-graphic-designer.jpg',
   },
 ];
+
 const container = document.querySelector(".team-container");
 
 for(let i = 0; i < team.length; i++){
@@ -45,3 +46,8 @@ for(let i = 0; i < team.length; i++){
   </div>
 `;
 }
+
+let bottone = document.getElementById("addMemberButton").addEventListener("click", function() {
+  const takeName = document.querySelector(".form-container");
+  console.log(takeName);
+});
