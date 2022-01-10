@@ -47,7 +47,11 @@ for(let i = 0; i < team.length; i++){
 `;
 }
 
-let bottone = document.getElementById("addMemberButton").addEventListener("click", function() {
-  const takeName = document.querySelector(".form-container");
+document.getElementById("addMemberButton").addEventListener("click", function() {
+  const takeName = document.getElementById("name");
+  const takeRole = document.getElementById("role");
+  const takeImage = document.getElementById("image");
   console.log(takeName);
+  console.log(takeRole);
+  console.log(takeImage);
 });
