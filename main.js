@@ -1,3 +1,6 @@
+const datiUtente = document.getElementById("name");
+console.log(datiUtente);
+
 const team = [
   {
     name: 'Wayne Barnett',
