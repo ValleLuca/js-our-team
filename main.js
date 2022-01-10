@@ -1,6 +1,3 @@
-const datiUtente = document.getElementById("name");
-console.log(datiUtente);
-
 const team = [
   {
     name: 'Wayne Barnett',
@@ -33,3 +30,6 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+//ottenere gli input per creare nuovi profili
+//una volta ottenuti i dati dal Dom prendere i dati e inserirli in un nuovo oggetto
