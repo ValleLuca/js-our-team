@@ -30,16 +30,18 @@ const team = [
     image: 'img/barbara-ramos-graphic-designer.jpg',
   },
 ];
+const container = document.querySelector(".team-container");
 
-const nomeCarta = team[0].name;
-pushNomeCarta.innerHTML = (nomeCarta);
-
-const ruoloCarta = team[1].role;
-pushRuoloCarta.innerHTML = (ruoloCarta);
-
-const imgCarta = team[2].image;
-const prova = document.getElementById("provaImg").src = (imgCarta);
-
-
-//ottenere gli input per creare nuovi profili
-//una volta ottenuti i dati dal Dom prendere i dati e inserirli in un nuovo oggetto
+for(let i = 0; i < team.length; i++){
+  container.innerHTML += `
+  <div class="team-card">
+    <div class="card-image" id="pushImgCarta">
+      <img src="${team[i].image}" id="provaImg">
+    </div>
+    <div class="card-text">
+      <h3 id="pushNomeCarta">${team[i].name}</h3>
+      <p id="pushRuoloCarta">${team[i].role}</p>
+    </div>
+  </div>
+`;
+}
